@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">
+        <button class="btn">test</button>
+        <div id="test-result"></div>
+    </div>
+    <div id="test2">
+        <button class="btn">test</button>
+        <div id="test2-result"></div>
+        <div id="test3-result"></div>
+    </div>
+    <script>
+    const exports = {};
+    </script>
+    <script src="../lib/index.js"></script>
+    <script>
+    const parent1 = document.querySelector("#test");
+    on(parent1,".btn","click",() => {
+        document.querySelector("#test-result").innerText = 'ok';
+    });
+
+    const parent2 = document.querySelector("#test2");
+    on(parent2,".btn","mousedown mouseup",(e) => {
+        if(e.type === 'mousedown') {
+            document.querySelector("#test2-result").innerText = 'mousedown';
+        }else if (e.type === 'mouseup') {
+            document.querySelector("#test2-result").innerText = 'mouseup';
+        }
+    });
+
+    </script>
+</body>
+</html>
