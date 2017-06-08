@@ -32,13 +32,7 @@ export const on = (element, query, eventNames, fn, capture = false) => {
         fn(e);
       }
     };
-    listenerList.push({
-      listener,
-      element,
-      query,
-      event,
-      capture
-    });
+    listenerList.push({ listener, element, query, event, capture });
     element.addEventListener(event, listener, capture);
   });
 };
