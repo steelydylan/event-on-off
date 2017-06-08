@@ -2,6 +2,23 @@
 A low-level module which supports jquery-like event delegations.<br>
 If you have ever used jQuery 'on' method, then you already know how to use this.
 
+## Install
+
+npm
+
+```
+npm install event-on-off --save
+```
+
+or
+
+yarn
+
+```
+yarn add event-on-off
+```
+
+
 ```js
 import { on, off } from 'event-on-off';
 
