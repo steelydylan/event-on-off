@@ -10,9 +10,7 @@ npm
 npm install event-on-off --save
 ```
 
-or
-
-yarn
+or yarn
 
 ```
 yarn add event-on-off
