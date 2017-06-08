@@ -1,5 +1,6 @@
 # event-on-off
-A low-level module which supports jquery-like event delegations
+A low-level module which supports jquery-like event delegations.
+
 If you have ever used jQuery 'on' method, then you already know how to use this.
 
 ```js
