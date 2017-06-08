@@ -1,6 +1,6 @@
 {
   "name": "event-on-off",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A low-level module which supports jquery-like event delegations",
   "homepage": "http://developer.a-blogcms.jp",
   "main": "lib/index.js",
