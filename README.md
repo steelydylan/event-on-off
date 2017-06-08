@@ -16,6 +16,7 @@ or yarn
 yarn add event-on-off
 ```
 
+## Usage
 
 ```js
 import { on, off } from 'event-on-off';
@@ -32,3 +33,19 @@ on(parent1, ".btn", "click", () => {
   <div id="test-result"></div>
 </div>
 ```
+
+## Also
+
+you can listen more than 2 events at once
+
+```js
+const parent2 = document.querySelector("#test2");
+on(parent2, ".btn", "mousedown mouseup", (e) => {
+  if (e.type === 'mousedown') {
+    document.querySelector("#test2-result").innerText = 'mousedown';
+  } else if (e.type === 'mouseup') {
+    document.querySelector("#test2-result").innerText = 'mouseup';
+  }
+});
+```
+
